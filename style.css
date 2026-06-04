@@ -726,3 +726,54 @@ nav{
     }
 
 }
+
+.footer{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-content h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.footer-content p{
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons a{
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: #ff6b00;
+}
+
+.copyright{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width:768px){
+
+    .footer-content h2{
+        font-size: 26px;
+    }
+
+    .social-icons a{
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+}
