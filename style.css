@@ -39,6 +39,12 @@ nav{
     font-size: 28px;
     transition: 0.3s ease;
 }
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
 /* Hover Effect */
 .nav-links li a{
@@ -76,7 +82,7 @@ nav{
     }
 }
 
-/* Mobile */
+/* Mobile
 @media screen and (max-width:768px){
 
     nav{
@@ -95,5 +101,139 @@ nav{
 
     .nav-links li a{
         font-size: 10px;
+    }
+} */
+
+/* Hamburger Hide on Desktop */
+.menu-toggle{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+@media screen and (max-width:768px){
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: black;
+
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+
+        padding: 20px 0;
+
+        display: none;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li a{
+        font-size: 18px;
+    }
+}
+
+
+.carousel-item{
+    height: 100vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.carousel-caption{
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.carousel-caption h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.carousel-caption p{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* Mobile Responsive */
+/* Mobile */
+@media screen and (max-width:768px){
+
+    /* Navbar */
+    nav{
+        padding: 10px 20px;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-links{
+        gap: 10px;
+    }
+
+    .nav-links li a{
+        font-size: 12px;
+    }
+
+    /* Hero Section */
+    .carousel-item{
+        height: 60vh;
+    }
+
+    .carousel-item img{
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .carousel-caption{
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+    }
+
+    .carousel-caption h1{
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p{
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    .carousel-item{
+        height: 50vh;
+    }
+
+    .carousel-item img{
+        height: 50vh;
+    }
+
+    .carousel-caption h1{
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p{
+        font-size: 0.8rem;
     }
 }
