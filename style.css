@@ -237,3 +237,81 @@ nav{
         font-size: 0.8rem;
     }
 }
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about-section{
+    padding: 100px 10%;
+    background: #f8f8f8;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-image{
+    flex: 1;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h4{
+    color: #ff9800;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-content h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-content p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.about-btn:hover{
+    background: #e68900;
+}
+
+@media screen and (max-width:768px){
+
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content h2{
+        font-size: 30px;
+    }
+
+    .about-section{
+        padding: 60px 20px;
+    }
+}
