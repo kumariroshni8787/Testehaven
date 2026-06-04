@@ -315,3 +315,147 @@ nav{
         padding: 60px 20px;
     }
 }
+
+
+/* ==========================
+   MENU SECTION
+========================== */
+
+.menu-section{
+    padding: 100px 10%;
+    background: white;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h4{
+    color: #ff9800;
+    font-size: 20px;
+}
+
+.section-title h2{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.menu-card{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-10px);
+}
+
+.menu-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-card h3{
+    padding: 15px 20px 5px;
+}
+
+.menu-card p{
+    padding: 0 20px;
+    color: #666;
+}
+
+.menu-card span{
+    display: block;
+    padding: 15px 20px;
+    color: #ff9800;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:992px){
+
+    .menu-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .section-title h2{
+        font-size: 35px;
+    }
+
+    .menu-card img{
+        height: 200px;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+
+    .menu-section{
+        padding: 60px 20px;
+    }
+
+    .menu-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-title h4{
+        font-size: 18px;
+    }
+
+    .section-title h2{
+        font-size: 28px;
+    }
+
+    .menu-card img{
+        height: 220px;
+    }
+
+    .menu-card h3{
+        font-size: 22px;
+    }
+
+    .menu-card p{
+        font-size: 14px;
+    }
+
+    .menu-card span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .section-title h2{
+        font-size: 24px;
+    }
+
+    .menu-card img{
+        height: 180px;
+    }
+
+    .menu-card h3{
+        font-size: 18px;
+    }
+
+    .menu-card p{
+        font-size: 13px;
+    }
+
+    .menu-card span{
+        font-size: 18px;
+    }
+}
