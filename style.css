@@ -1,45 +1,50 @@
-*{
+html {
+    scroll-behavior: smooth;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 80px;
-    background-color:black;
+    background-color: black;
     width: 100%;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo img{
+.logo img {
     width: 80px;
     height: 80px;
     object-fit: cover;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     gap: 30px;
     list-style: none;
 }
 
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-size: 28px;
     transition: 0.3s ease;
 }
-nav{
+
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +52,7 @@ nav{
 }
 
 /* Hover Effect */
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -55,57 +60,35 @@ nav{
     display: inline-block;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: black;
     background-color: #ff9800;
     transform: translateY(-5px);
 }
 
 /* Tablet */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
-    nav{
+    nav {
         padding: 15px 40px;
     }
 
-    .logo img{
+    .logo img {
         width: 100px;
         height: 100px;
     }
 
-    .nav-links{
+    .nav-links {
         gap: 20px;
     }
 
-    .nav-links li a{
+    .nav-links li a {
         font-size: 16px;
     }
 }
 
-/* Mobile
-@media screen and (max-width:768px){
 
-    nav{
-        padding: 10px 20px;
-        
-    }
-
-    .logo img{
-        width: 70px;
-        height: 70px;
-    }
-
-    .nav-links{
-        gap: 15px;
-    }
-
-    .nav-links li a{
-        font-size: 10px;
-    }
-} */
-
-/* Hamburger Hide on Desktop */
-.menu-toggle{
+.menu-toggle {
     display: none;
     font-size: 28px;
     color: white;
@@ -113,13 +96,13 @@ nav{
 }
 
 /* Mobile Menu */
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    .menu-toggle{
+    .menu-toggle {
         display: block;
     }
 
-    .nav-links{
+    .nav-links {
         position: absolute;
         top: 100px;
         left: 0;
@@ -135,105 +118,105 @@ nav{
         display: none;
     }
 
-    .nav-links.active{
+    .nav-links.active {
         display: flex;
     }
 
-    .nav-links li a{
+    .nav-links li a {
         font-size: 18px;
     }
 }
 
 
-.carousel-item{
+.carousel-item {
     height: 100vh;
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 100%;
     object-fit: cover;
     filter: brightness(50%);
 }
 
-.carousel-caption{
+.carousel-caption {
     bottom: 50%;
     transform: translateY(50%);
 }
 
-.carousel-caption h1{
+.carousel-caption h1 {
     font-size: 4rem;
     font-weight: bold;
 }
 
-.carousel-caption p{
+.carousel-caption p {
     font-size: 1.2rem;
     margin-top: 15px;
 }
 
 /* Mobile Responsive */
 /* Mobile */
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
     /* Navbar */
-    nav{
+    nav {
         padding: 10px 20px;
     }
 
-    .logo img{
+    .logo img {
         width: 60px;
         height: 60px;
     }
 
-    .nav-links{
+    .nav-links {
         gap: 10px;
     }
 
-    .nav-links li a{
+    .nav-links li a {
         font-size: 12px;
     }
 
     /* Hero Section */
-    .carousel-item{
+    .carousel-item {
         height: 60vh;
     }
 
-    .carousel-item img{
+    .carousel-item img {
         height: 60vh;
         object-fit: cover;
     }
 
-    .carousel-caption{
+    .carousel-caption {
         top: 50%;
         bottom: auto;
         transform: translateY(-50%);
     }
 
-    .carousel-caption h1{
+    .carousel-caption h1 {
         font-size: 1.8rem;
     }
 
-    .carousel-caption p{
+    .carousel-caption p {
         font-size: 0.9rem;
         padding: 0 15px;
     }
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
 
-    .carousel-item{
+    .carousel-item {
         height: 50vh;
     }
 
-    .carousel-item img{
+    .carousel-item img {
         height: 50vh;
     }
 
-    .carousel-caption h1{
+    .carousel-caption h1 {
         font-size: 1.3rem;
     }
 
-    .carousel-caption p{
+    .carousel-caption p {
         font-size: 0.8rem;
     }
 }
@@ -242,51 +225,51 @@ nav{
    ABOUT SECTION
 ========================== */
 
-.about-section{
+.about-section {
     padding: 100px 10%;
     background: #f8f8f8;
 }
 
-.about-container{
+.about-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
 }
 
-.about-image{
+.about-image {
     flex: 1;
 }
 
-.about-image img{
+.about-image img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.about-content{
+.about-content {
     flex: 1;
 }
 
-.about-content h4{
+.about-content h4 {
     color: #ff9800;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.about-content h2{
+.about-content h2 {
     font-size: 42px;
     margin-bottom: 20px;
 }
 
-.about-content p{
+.about-content p {
     font-size: 16px;
     line-height: 1.8;
     color: #555;
     margin-bottom: 15px;
 }
 
-.about-btn{
+.about-btn {
     display: inline-block;
     padding: 12px 25px;
     background: #ff9800;
@@ -296,22 +279,32 @@ nav{
     transition: 0.3s;
 }
 
-.about-btn:hover{
+.about-btn:hover {
     background: #e68900;
 }
 
-@media screen and (max-width:768px){
+.btn,
+button {
+    transition: 0.3s ease;
+}
 
-    .about-container{
+.btn:hover,
+button:hover {
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width:768px) {
+
+    .about-container {
         flex-direction: column;
         text-align: center;
     }
 
-    .about-content h2{
+    .about-content h2 {
         font-size: 30px;
     }
 
-    .about-section{
+    .about-section {
         padding: 60px 20px;
     }
 }
@@ -321,60 +314,60 @@ nav{
    MENU SECTION
 ========================== */
 
-.menu-section{
+.menu-section {
     padding: 100px 10%;
     background: white;
 }
 
-.section-title{
+.section-title {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.section-title h4{
+.section-title h4 {
     color: #ff9800;
     font-size: 20px;
 }
 
-.section-title h2{
+.section-title h2 {
     font-size: 40px;
     margin-top: 10px;
 }
 
-.menu-container{
+.menu-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.menu-card{
+.menu-card {
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
-.menu-card:hover{
+.menu-card:hover {
     transform: translateY(-10px);
 }
 
-.menu-card img{
+.menu-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
-.menu-card h3{
+.menu-card h3 {
     padding: 15px 20px 5px;
 }
 
-.menu-card p{
+.menu-card p {
     padding: 0 20px;
     color: #666;
 }
 
-.menu-card span{
+.menu-card span {
     display: block;
     padding: 15px 20px;
     color: #ff9800;
@@ -383,79 +376,79 @@ nav{
 }
 
 
-@media screen and (max-width:992px){
+@media screen and (max-width:992px) {
 
-    .menu-container{
-        grid-template-columns: repeat(2,1fr);
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    .section-title h2{
+    .section-title h2 {
         font-size: 35px;
     }
 
-    .menu-card img{
+    .menu-card img {
         height: 200px;
     }
 }
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    .menu-section{
+    .menu-section {
         padding: 60px 20px;
     }
 
-    .menu-container{
+    .menu-container {
         grid-template-columns: 1fr;
         gap: 25px;
     }
 
-    .section-title h4{
+    .section-title h4 {
         font-size: 18px;
     }
 
-    .section-title h2{
+    .section-title h2 {
         font-size: 28px;
     }
 
-    .menu-card img{
+    .menu-card img {
         height: 220px;
     }
 
-    .menu-card h3{
+    .menu-card h3 {
         font-size: 22px;
     }
 
-    .menu-card p{
+    .menu-card p {
         font-size: 14px;
     }
 
-    .menu-card span{
+    .menu-card span {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
 
-    .section-title h2{
+    .section-title h2 {
         font-size: 24px;
     }
 
-    .menu-card img{
+    .menu-card img {
         height: 180px;
     }
 
-    .menu-card h3{
+    .menu-card h3 {
         font-size: 18px;
     }
 
-    .menu-card p{
+    .menu-card p {
         font-size: 13px;
     }
 
-    .menu-card span{
+    .menu-card span {
         font-size: 18px;
     }
 }
@@ -465,79 +458,79 @@ nav{
    GALLERY SECTION
 ========================== */
 
-.gallery-section{
+.gallery-section {
     padding: 100px 10%;
     background: #f8f8f8;
 }
 
-.gallery-container{
+.gallery-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.gallery-item{
+.gallery-item {
     overflow: hidden;
     border-radius: 15px;
 }
 
-.gallery-item img{
+.gallery-item img {
     width: 100%;
     height: 280px;
     object-fit: cover;
     transition: 0.5s;
 }
 
-.gallery-item:hover img{
+.gallery-item:hover img {
     transform: scale(1.1);
 }
 
 
 /* Tablet */
-@media screen and (max-width:992px){
+@media screen and (max-width:992px) {
 
-    .gallery-container{
-        grid-template-columns: repeat(2,1fr);
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Mobile */
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    .gallery-section{
+    .gallery-section {
         padding: 60px 20px;
     }
 
-    .gallery-container{
+    .gallery-container {
         grid-template-columns: 1fr;
     }
 
-    .gallery-item img{
+    .gallery-item img {
         height: 220px;
     }
 }
 
 
-.reviews{
+.reviews {
     padding: 80px 10%;
     background: #111;
     color: white;
     text-align: center;
 }
 
-.section-title{
+.section-title {
     font-size: 40px;
     margin-bottom: 50px;
 }
 
-.review-container{
+.review-container {
     display: flex;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.review-card{
+.review-card {
     background: #222;
     padding: 30px;
     border-radius: 15px;
@@ -545,11 +538,11 @@ nav{
     transition: 0.4s;
 }
 
-.review-card:hover{
+.review-card:hover {
     transform: translateY(-10px);
 }
 
-.review-card img{
+.review-card img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -557,61 +550,61 @@ nav{
     margin-bottom: 15px;
 }
 
-.review-card h3{
+.review-card h3 {
     margin-bottom: 10px;
 }
 
-.stars{
+.stars {
     color: gold;
     font-size: 20px;
     margin-bottom: 15px;
 }
 
-.review-card p{
+.review-card p {
     color: #ccc;
     line-height: 1.7;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .section-title{
+    .section-title {
         font-size: 30px;
     }
 
-    .review-card{
+    .review-card {
         width: 100%;
     }
 
 }
 
 
-.reservation{
+.reservation {
     padding: 80px 10%;
     background: #1a1a1a;
     color: white;
     text-align: center;
 }
 
-.section-title{
+.section-title {
     font-size: 40px;
     margin-bottom: 10px;
 }
 
-.section-subtitle{
+.section-subtitle {
     color: #ccc;
     margin-bottom: 40px;
 }
 
-.reservation-form{
+.reservation-form {
     max-width: 700px;
     margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.reservation-form input{
+.reservation-form input {
     padding: 15px;
     border: none;
     border-radius: 8px;
@@ -619,7 +612,7 @@ nav{
     font-size: 16px;
 }
 
-.reservation-form button{
+.reservation-form button {
     grid-column: span 2;
     padding: 15px;
     background: #ff6b00;
@@ -631,68 +624,68 @@ nav{
     transition: 0.3s;
 }
 
-.reservation-form button:hover{
+.reservation-form button:hover {
     background: #e65c00;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .reservation-form{
+    .reservation-form {
         grid-template-columns: 1fr;
     }
 
-    .reservation-form button{
+    .reservation-form button {
         grid-column: span 1;
     }
 
-    .section-title{
+    .section-title {
         font-size: 30px;
     }
 
 }
 
-.contact{
+.contact {
     padding: 80px 10%;
     background: #111;
     color: white;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     justify-content: space-between;
     gap: 50px;
     flex-wrap: wrap;
 }
 
-.contact-info{
+.contact-info {
     flex: 1;
     min-width: 300px;
 }
 
-.contact-info h2{
+.contact-info h2 {
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.contact-info p{
+.contact-info p {
     margin-bottom: 15px;
     color: #ccc;
     line-height: 1.7;
 }
 
-.contact-form{
+.contact-form {
     flex: 1;
     min-width: 300px;
 }
 
-.contact-form form{
+.contact-form form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
     padding: 15px;
     border: none;
     border-radius: 8px;
@@ -700,7 +693,7 @@ nav{
     font-size: 16px;
 }
 
-.contact-form button{
+.contact-form button {
     padding: 15px;
     border: none;
     border-radius: 8px;
@@ -711,23 +704,23 @@ nav{
     transition: 0.3s;
 }
 
-.contact-form button:hover{
+.contact-form button:hover {
     background: #e65c00;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .contact-container{
+    .contact-container {
         flex-direction: column;
     }
 
-    .contact-info h2{
+    .contact-info h2 {
         font-size: 30px;
     }
 
 }
 
-.footer{
+.footer {
     background-color: #000;
     color: white;
     text-align: center;
@@ -735,43 +728,43 @@ nav{
     border-top: 1px solid #333;
 }
 
-.footer-content h2{
+.footer-content h2 {
     font-size: 32px;
     margin-bottom: 10px;
 }
 
-.footer-content p{
+.footer-content p {
     color: #ccc;
     margin-bottom: 15px;
 }
 
-.social-icons{
+.social-icons {
     margin: 20px 0;
 }
 
-.social-icons a{
+.social-icons a {
     color: white;
     font-size: 22px;
     margin: 0 10px;
     transition: 0.3s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff6b00;
 }
 
-.copyright{
+.copyright {
     margin-top: 20px;
     font-size: 14px;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .footer-content h2{
+    .footer-content h2 {
         font-size: 26px;
     }
 
-    .social-icons a{
+    .social-icons a {
         font-size: 20px;
         margin: 0 8px;
     }
