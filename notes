@@ -1,23 +1,25 @@
 Royal Bites Restaurant Website (Taste Haven) - Project Notes
 Project Overview
 
-Taste Haven ek responsive single-page restaurant website hai jo customers ko restaurant ke baare me information, menu, gallery, reviews aur table reservation ki suvidha deti hai.
+Taste Haven ek responsive single-page restaurant website hai jo customers ko restaurant ke baare me information, menu,
+gallery, reviews aur table reservation ki suvidha deti hai.
 
 Technologies Used
+
 HTML5
 CSS3
 Bootstrap 5
 Font Awesome
 Responsive Design (Media Queries)
 Color Palette
-Color	Usage
-#000000	Footer Background
-#111111	Navbar & Dark Sections
-#222222	Cards Background
-#FFFFFF	Main Text
-#CCCCCC	Secondary Text
-#FF6B00	Buttons & Hover Effects
-#333333	Borders
+Color Usage
+#000000 Footer Background
+#111111 Navbar & Dark Sections
+#222222 Cards Background
+#FFFFFF Main Text
+#CCCCCC Secondary Text
+#FF6B00 Buttons & Hover Effects
+#333333 Borders
 Website Sections
 1. Navbar
 Logo
@@ -89,12 +91,12 @@ Royal-Bites-Restaurant
 ├── script.js
 │
 ├── images
-│   ├── logo.png
-│   ├── hero.jpg
-│   ├── about.jpg
-│   ├── menu1.jpg
-│   ├── gallery1.jpg
-│   └── review1.jpg
+│ ├── logo.png
+│ ├── hero.jpg
+│ ├── about.jpg
+│ ├── menu1.jpg
+│ ├── gallery1.jpg
+│ └── review1.jpg
 │
 └── README.md
 
@@ -128,6 +130,7 @@ Interactive Hover Effects
 Attractive Food Gallery
 Easy Table Reservation System
 Customer Review Showcase
+
 Project Duration
 Designed and Developed as a Frontend Practice Project
 Focused on Responsive Web Design and UI Development
